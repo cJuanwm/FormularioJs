@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/Formulario.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>La ComicEra</title>
+  </head>
+  <body>
+    <main>
+      <div class="formularioPrueba">
+        <h1>Form ComicEra</h1>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Product type</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="tipoProducto"
+              aria-describedby="productHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Quantity product</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="cantidadProducto"
+              aria-describedby="quantityHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Product name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="nombreProducto"
+              aria-describedby="productHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Total price</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="precio"
+              aria-describedby="productHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Description</label
+            >
+            <input type="text" class="form-control" id="descripcion" />
+          </div>
+
+          <button id="botonId" type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+      <img
+        class="spiderman"
+        src="../Images/Spiderman.png"
+        alt="Este bloque contiene un super heroe"
+      />
+    </main>
+    <script src="../controllers/controladorFormulario.js"></script>
+  </body>
+</html>
