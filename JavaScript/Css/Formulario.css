@@ -1,69 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Josefin Sans", sans-serif;
-}
-  
-
-body{
-    background-color: rgb(240, 240, 240);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: rgb(240, 240, 240);
 }
 
-.formularioPrueba{
-    justify-content: space-around;
-    height: 95vh;
-    width: 30em;
-    margin: 1em auto;
-    background-color: rgb(223, 222, 222);
-    border-radius: 1em;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-form{
-    width: 80%;
-    margin: auto;
+.formBlock {
+  justify-content: space-around;
+  height: 95vh;
+  width: 30em;
+  margin: 1em auto;
+  background-color: rgb(223, 222, 222);
+  border-radius: 1em;
+  overflow: scroll;
+
 }
 
-.btn-primary{
-    border: none;
-    border-radius: 1em;
-    width: 10em;
-    height: 2em;
-    background-color: rgb(233, 233, 233);
-    margin-left: 1.5em;
+form {
+  width: 80%;
+  margin: auto;
 }
 
-h1{
-    padding: 0.5em;
+.btn-primary {
+  border: none;
+  border-radius: 1em;
+  width: 10em;
+  height: 2em;
+  background-color: rgb(211, 211, 211);
+  margin-left: 1.5em;
 }
 
-.mb-3{
-    padding: 1em;
-    border: 1em;
-    border-color: black;
+h1 {
+  padding: 1em;
 }
 
-.form-label{
-    padding: 1em;
+.mb-3 {
+  padding: 1em;
+  border: 1em;
+  border-color: black;
 }
 
-.form-control{
-    width: 25em;
-    height: 2em;
+.form-label {
+  padding: 0em;
 }
 
-.form-control2{
-    width: 25em;
-    height: 4em;
+.form-control {
+  width: 90%;
+  height: 2em;
 }
 
-.spiderman{
-    width: 29em;
-    height: 29em;
+.spiderman {
+  width: 29em;
+  height: 29em;
 }
-

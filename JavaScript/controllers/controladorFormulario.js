@@ -3,30 +3,39 @@
 //Almacenando una etiqueta HTML en una variable de JS
 //Hago esto para poder controlar esa etiqueta desde la logica de JS
 
-let productNameBox = document.getElementById('nombreProducto');
+let nameBox = document.getElementById('name');
 
-let productTipe = document.getElementById('tipoProducto');
+let unitPriceBox = document.getElementById('unitPrice');
 
-let productQuantity = document.getElementById('cantidadProducto');
+let descriptionBox = document.getElementById('description');
 
-let price = document.getElementById('precio');
+let pictureBox = document.getElementById('picture');
 
-let description = document.getElementById('descripcion');
+let reviewBox = document.getElementById('review');
 
-let termsConditions = document.getElementById('terminosCondicionesBox')
+let brandBox = document.getElementById('brand');
 
-let buttonId = document.getElementById('botonId');
+let buttonIdBox = document.getElementById('buttonId');
 
 //¿Como carajos detecto un evento en Js?
 //Paso 1. Una vez tenga una variable que almacena la etiqueta sobre la cual quiero escuchar el evento
 //Paso 2. Utilizar la funcion o metodo propio de Js watchdogs(Perro guardian)
-buttonId.addEventListener("click", function(evento){
+buttonId.addEventListener("click", function (evento) { //Deteccion de eventos
 
-    evento.preventDefault;
+    evento.preventDefault();
 
     //Logica que deseo activar si el evento se detecto con exito
-    console.log("Acabam de darle click a tu formulario")
 
     //¿Como capturar el valor de un input de un formulario?
+
+    let name = nameBox.value
+    let unitPrice = unitPriceBox.value
+    let description = descriptionBox.value
+    let picture = pictureBox.value
+    let review = reviewBox.value
+    let brand = brandBox.value
+    let buttonId = buttonIdBox.value
+
+    console.log(name, unitPrice, description, picture, review, brand, buttonId);
 
 })
