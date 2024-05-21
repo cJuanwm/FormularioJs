@@ -66,6 +66,45 @@ let studentsPOO = Array(
 
 //Recorriendo un arreglo
 
-students.forEach(function (student) {
+/*students.forEach(function (student) {
   console.log(student);
+}); */
+
+//Generando contenido dinámico con Js
+//1. Tener un arreglo de datos
+//2. Referencia a la base o componente padre
+let row = document.getElementById("row");
+
+//3. Recorro el arreglo de datos y comienzo a generar etiquetas
+//desde JS (Traversing)
+
+students.forEach(function (student) {
+  //Que quieres crear?
+  //Solo puedo crear etiquetas reales de html
+
+  let column = document.createElement("div");
+  column.classList.add("col");
+
+  let card = document.createElement("div");
+  card.classList.add("card", "h-100", "shadow");
+
+  let studentName = document.createElement("h3");
+  studentName.classList.add("text-center");
+  studentName.textContent = student.name;
+
+  let studentAge = document.createElement("h3");
+  studentAge.classList.add("text-center");
+  studentAge.textContent = "Age: " + student.age;
+
+  let studentCashPayment = document.createElement("h2");
+  studentCashPayment.classList.add("text-center");
+  studentCashPayment.textContent = "CashPayment: " + student.cashPayment;
+
+  //Asocio los elementos creados al componente padre
+  //Hijos de cada etiqueta
+  row.appendChild(column);
+  column.appendChild(card);
+  card.appendChild(studentName);
+  card.appendChild(studentAge);
+  card.appendChild(studentCashPayment);
 });
